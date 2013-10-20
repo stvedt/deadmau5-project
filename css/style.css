@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*---------------------PAGE LAYOUT -----------------*/
+body {
+	background-color:#666;
+	position:relative;
+	z-index:0;
+}
+
+#header {
+	width:960px;
+	margin:0 auto;
+	z-index:3;
+	
+}
+.headerBg {
+	background:url(../trippy-header.png) top left no-repeat;
+	margin: 0 auto;
+	position:fixed;
+	top:0px;
+	left:0px;
+	color:#fff;
+	padding: 0;
+	width:100%;
+	height: 180px;
+	background-position:38% 0;
+	border-bottom:1px solid #000;
+	z-index:3;
+}
+#container {
+	position:relative;
+	width:960px;
+	margin:0 auto;
+	z-index:2;
+
+}
+#content {
+	position:relative;
+	color: white;
+	margin:0 auto;
+	padding:5px;
+	padding-bottom:60px;
+	width:950px;
+	z-index:2;
+	margin-top:180px;
+}
+#footer {
+	background: url(../images/crowd.png) 100% 0 repeat-x;
+	padding-top:40px;
+	height:50px;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	text-align:center;
+	z-index:3;
+	color:#CCCCCC;
+}
+#footer a {
+	color:#CCC;
+}
+.floatImg {
+	float:right;
+}
+/*---------------------NAV -------------------------*/
+
+#nav {
+	margin-top: 75px;
+}
+#nav ul {
+	margin:15px 0px;
+	padding:0px;
+}
+#nav ul li {
+	float:left;
+	list-style:none;
+	margin:0px;
+	padding:0px 5px;
+	width:102px;
+	height:27px;
+}
+#nav ul li a {
+	display:block;
+	width:102px;
+	height:27px;
+}
+#nav span {
+	visibility:hidden;
+	display:none;
+}
+#nav ul li#home a:link, #nav ul li#home a:visited {
+	background:url(../images/home-btn-1.jpg) top left no-repeat;
+}
+#nav ul li#home a:hover, #nav ul li#home a:active {
+	background:url(../images/home-btn-2.jpg) top left no-repeat;
+}
+#nav ul li#events a:link, #nav ul li#events a:visited {
+	background:url(../images/events-btn-1.jpg) top left no-repeat;
+}
+#nav ul li#events a:hover, #nav ul li#mueventssic a:active {
+	background:url(../images/events-btn-2.jpg) top left no-repeat;
+}
+#nav ul li#music a:link, #nav ul li#music a:visited {
+	background:url(../images/music-btn-1.jpg) top left no-repeat;
+}
+#nav ul li#music a:hover, #nav ul li#music a:active {
+	background:url(../images/music-btn-2.jpg) top left no-repeat;
+}
+#nav ul li#bio a:link, #nav ul li#bio a:visited {
+	background:url(../images/bio-btn-1.jpg) top left no-repeat;
+}
+#nav ul li#bio a:hover, #nav ul li#bio a:active {
+	background:url(../images/bio-btn-2.jpg) top left no-repeat;
+}
+#nav ul li#contact a:link, #nav ul li#contact a:visited {
+	background:url(../images/contact-btn-1.jpg) top left no-repeat;
+}
+#nav ul li#contact a:hover, #nav ul li#contact a:active {
+	background:url(../images/contact-btn-2.jpg) top left no-repeat;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+p, ul {
+	font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size-adjust:0.488;
+	font-weight:200;
+	font-style:normal;
+}
+img {
+	border: 0;
+}
+h1 {
+	width:960px;
+	margin:0 auto;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:64px;
+	font-weight:normal;
+	font-style:normal;
+}
+h2 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size-adjust:0.531;
+	font-size: 36px;
+	font-weight:500;
+	font-style:normal;
+	margin: 0 0 10px 0;
+}
+h3 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size-adjust:0.531;
+	font-size: 22px;
+	font-weight:600;
+	font-style:normal;
+	margin: 0 0 10px 0;
+}
+ul li {
+	list-style-type:square;
+	font-weight:bold;
+}
+a{
+	color:#fff;
+}
+hr {
+	margin: 0px 5px 5px 5px;
+	padding:0;
+	width:auto;
+	size:1px;
+	color:#fff;
+}
+/*---------------------   LIGHTS    ---------------------*/
+
+.lightCenter {
+	height: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	z-index:1;
+	background-attachment:fixed;
+	background-image: url(../images/center-light.png);
+	background-repeat: no-repeat;
+	background-position: 60% 0;
+}
+.lightRight {
+	background: url(../images/right-light.png) 70% 0 no-repeat fixed;
+	height: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	
+}
+/*  -----------------------Mosaic Styles -------------------------*/
+
+.details {
+	margin:0 10px;
+}
+.mosaic-block h4 {
+	font:300 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin: 3px;
+	line-height:100%;
+	letter-spacing:0.15em;
+	color:#fff;
+	text-shadow:1px 1px 0 rgb(0,0,0);
+}
+.mosaic-block ol {
+	margin:0px;
+	margin-left:20px;
+	padding:0px;
+}
+.mosaic-block li {
+	margin: inherit 0px;
+	font:300 12px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+	color:#aaa;
+	text-shadow:1px 1px 0 rgb(0,0,0);
+}
+.mosaic-block a {
+	text-decoration:none;
+}
+/*General Mosaic Styles*/
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:210px;
+	height:210px;
+	margin:9px;
+	background:#111 url(../img/progress.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+.mosaic-backdrop {
+	display:none;
+	position:absolute;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#111;
+}
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#111;
+}
+/*** Custom Animation Styles (You can remove/add any styles below) ***/
+.circle .mosaic-overlay {
+	background:url(../img/hover-magnify.png) no-repeat center center;
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+	filter:alpha(opacity=00);
+	display:none;
+}
+.fade .mosaic-overlay {
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+	filter:alpha(opacity=00);
+	background:url(../img/bg-black.png);
+}
+		
+.bar2 .mosaic-overlay {
+	bottom:-185px;
+	height:210px;
+	opacity:0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter:alpha(opacity=80);
+}
+.bar2 .mosaic-overlay:hover {
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter:alpha(opacity=100);
+}
